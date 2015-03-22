@@ -1,13 +1,11 @@
-setwd("C:/Users/NAIXIAN/Desktop/Coursera")
-
-train.x<-read.table("./getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train/X_train.txt")
-test.x<-read.table("./getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/test/X_test.txt")
-train.y<-read.table("./getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train/y_train.txt")
-test.y<-read.table("./getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/test/y_test.txt")
-Subject_train<-read.table("./getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train/subject_train.txt")
-Subject_test<-read.table("./getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/test/subject_test.txt")
-activity_lables<-read.table("./getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/activity_labels.txt")
-features<-read.table("./getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/features.txt")
+train.x<-read.table("./UCI HAR Dataset/train/X_train.txt")
+test.x<-read.table("./UCI HAR Dataset/test/X_test.txt")
+train.y<-read.table("./UCI HAR Dataset/train/y_train.txt")
+test.y<-read.table("./UCI HAR Dataset/test/y_test.txt")
+Subject_train<-read.table("./UCI HAR Dataset/train/subject_train.txt")
+Subject_test<-read.table("./UCI HAR Dataset/test/subject_test.txt")
+activity_lables<-read.table("./UCI HAR Dataset/activity_labels.txt")
+features<-read.table("./UCI HAR Dataset/features.txt")
 
 #---1. Merges the training and the test sets to create one data set.
 all.x<-rbind(train.x,test.x)
